@@ -1,8 +1,9 @@
+
 # Starbucks Sales Dashboard
 
 An end-to-end data analytics project: raw CSV files → SQL Server database → Power BI dashboard.
 
-![Dashboard overview](screenshots/02_overview.png)
+![Dashboard overview]<img width="1343" height="748" alt="Screenshot 2026-11-23 160304" src="https://github.com/user-attachments/assets/bcaa1e8b-863c-4341-b57f-406d816a471b" />
 
 
 
@@ -90,31 +91,9 @@ An hours table (0 to 23) is related to `sales` by hour so the charts display hou
 
 | Home | Overview | Detail |
 |---|---|---|
-| ![Home](screenshots/01_home.png) | ![Overview](screenshots/02_overview.png) | ![Detail](screenshots/03_detail.png) |
-
-## Repository Structure
-
-```
-starbucks-sales-dashboard/
-├── README.md
-├── sql/                  # database creation, import and validation scripts
-├── powerbi/              # Power BI report (.pbix)
-└── screenshots/          # dashboard images
-```
-
-## How to Run
-
-1. Install SQL Server (Express is enough) and SSMS.
-2. Run the scripts in `sql/` to create the database and tables.
-3. Import the CSV files into staging tables, then load the final tables.
-4. Open the `.pbix` file in Power BI Desktop.
-5. Update the data source: **Transform data → Data source settings → Change source**, and point it to your own server name and the `Starbucks` database.
-
-## What I Learned
-
-- Designing a relational schema and choosing keys based on what the data really contains
-- Loading data safely through staging tables and validating it
-- Why `COUNT(DISTINCT ...)` matters when IDs repeat
+| ![Home]<img width="1338" height="751" alt="Screenshot 2026-11-23 160208" src="https://github.com/user-attachments/assets/51104df7-ec05-4b5e-a3f6-228bc5b8b78e" />
+ | ![Overview]<img width="1343" height="748" alt="Screenshot 2026-11-23 160304" src="https://github.com/user-attachments/assets/94a4b4a5-7439-4b92-9511-849a5e78b965" /> | ![Detail]<img width="1456" height="815" alt="Screenshot 2026-11-23 160915" src="https://github.com/user-attachments/assets/accecd0d-9c0e-44c6-b3c8-128e56ea7d8e" />
+ |
 - Building DAX measures and a report with a clean data model
 
 ## Author
